@@ -43,7 +43,7 @@ public class UserController {
 		model.addAttribute("title", "Detalles de usuario");
 		model.addAttribute("user", user);
 		
-		return "details";
+		return "detailsObject";
 	}
 	
 }

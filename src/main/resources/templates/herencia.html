@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title th:text="${Titulo}">details</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+		<h1 th:text="'Profesor Guía: ' + ${profesor.nombre}"></h1>
+		<h2 th:text="'Materia del profesor guía: ' + ${profesor.asignatura}"></h2>
+		<br/>
+		<h1 th:text="'Nombre del Alumno: '+ ${alumno.nombre}"></h1>
+		<h2>Notas del alumno</h2>
+		<ul>
+			<li th:text="'Matemática: ' + ${alumno.notaMatematica}"></li>
+			<li th:text="'Castellano: ' + ${alumno.notaCastellano}"></li>
+			<li th:text="'Historia: ' + ${alumno.notaHistoria}"></li>
+		</ul>
+		<br/>
+		<h1 th:text="'Nombre del Alumno 2: '+ ${alumno2.nombre}"></h1>
+		<h2>Notas del alumno</h2>
+		<ul>
+			<li th:text="'Matemática: ' + ${alumno2.notaMatematica}"></li>
+			<li th:text="'Castellano: ' + ${alumno2.notaCastellano}"></li>
+			<li th:text="'Historia: ' + ${alumno2.notaHistoria}"></li>
+		</ul>
+        <script src="" async defer></script>
+    </body>
+</html>
